@@ -1,0 +1,135 @@
+h1 {
+  font-size:		200%;
+  font-family:		sans-serif;
+  color:			#2020ff;
+}
+
+h2 {
+  font-size:		130%;
+  font-family:		sans-serif;
+  color:			#3030d7;
+}
+
+h3 {
+  font-size:		110%;
+  font-family:		sans-serif;
+  color:			#4040c0;
+}
+
+hr {
+  border-top:		1px solid #bbf;
+  border-bottom:	0;
+  border-left:		0;
+  border-right:		0;
+}
+
+a:link, a:visited {
+  color:			#22f;
+}
+
+a:hover {
+  color:			#0000ff;
+}
+
+td {
+  padding:			5px;
+  border:			1px solid #dde;
+  font-size:		13px;
+}
+
+td.noborder {
+  padding:			5px;
+  border:			0px solid #dde;
+}
+
+textarea, input[type=text],input[type=password] {
+  border-top:		1px solid #99d;
+  border-left:		1px solid #99d;
+  border-bottom:	1px solid #aad;
+  border-right:		1px solid #aad;
+}
+
+.section {
+  border-top:		1px solid #bbf;
+  padding-top:		0.5em;
+  padding-bottom:	0.5em;
+  margin-top:		0.5em;
+  margin-bottom:	0.5em;
+}
+
+.top_zero {
+  top:				0;
+}
+
+.message td {
+  padding-bottom:	0.1em;
+  padding-top:		0.1em;
+}
+
+.message_body {
+  overflow:			hidden;
+  border:			2px solid #000;
+  width:			80%;
+}
+
+.message_info {
+  border:			1px solid #bdb;
+  padding-right:	0.5em;
+  padding-left:		0.3em;
+  padding-top:		0;
+  padding-bottom:	0;
+  width:			15%;
+}
+
+.message {
+  padding-top:		0;
+  padding-bottom:	0;
+  height:			2.5em;
+}
+
+.messages {
+  padding:			0 0 0 0;
+  width:			100%;
+}
+
+.message_date {
+  font-size:		60%;
+  color:			#444;
+}
+
+#chat {
+  font-size:		12px;
+  font-family:		sans-serif;
+  border:			1px solid #dbb;
+  padding:			6px;
+  width:			630px;
+  height:			600px;
+}
+
+#photos,#iplog {
+  border:			0;
+  height:			200;
+  width:			100%;
+  border:			1px solid #dbb;
+}
+
+#content {
+  margin-left:		100px;
+  font-family:		serif;
+  font-size:		13px;
+  width:			650px;
+  text-align: 		left;
+  color:			#000000;
+}
+
+#copyright {
+  font-size:		80%;
+  padding-top:		0.5em;
+  padding-bottom:	0.5em;
+  margin-top:		0.5em;
+  margin-bottom:	0.5em;
+}
+
+#header {
+  text-align:		left;
+}
