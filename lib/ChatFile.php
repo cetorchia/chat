@@ -85,6 +85,10 @@ class ChatFile {
   // Gets the message filename
   function getFilename($y,$w)
   {
+    // The caller could have given us any number of 0s, assuming
+    // the parameters can be strings or integers.
+    $y = sprintf("%04d", $y);
+    $w = sprintf("%02d", $w);
     return WEB_ROOT."/messages/$y-$w";				// By year, week.
   }
 

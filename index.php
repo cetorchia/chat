@@ -13,8 +13,8 @@ $yw_suffix = "";
 
 if(isset($_REQUEST["author"]))
 {
-  if (isset($_GET["author"])) {
-    $author = $_GET["author"];
+  if (isset($_POST["author"])) {
+    $author = $_POST["author"];
   }
   else {
     $author = $_REQUEST["author"];
