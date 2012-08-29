@@ -66,7 +66,7 @@ echo "<head>";
 
 echo "<meta http-equiv=\"Expires\" content=\"0\" />";
 echo "<link rel=\"StyleSheet\" href=\"style.css\" type=\"text/css\" />";
-echo "<title>Torchia Sawicki Chat Room</title>";
+echo "<title>Chat Room</title>";
 
 echo "</head>";
 
@@ -79,7 +79,7 @@ echo "<div id=\"content\">";
  */
 
 echo "<div id=\"header\">";
-echo "<h1>Torchia Sawicki Chat Room</h1>";
+echo "<h1>Chat Room</h1>";
 
 echo "</div>";
 
