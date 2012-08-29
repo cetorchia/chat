@@ -47,7 +47,7 @@ class Logger {
     // If we couldn't, then cry for help and die.
     if($h == FALSE) {
       echo "<b><i>Help!</i></b> No log file!";
-      die();
+      return;
     }
 
     // Now write the message to the file and close it.
