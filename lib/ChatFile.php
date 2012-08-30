@@ -2,8 +2,8 @@
 
 require_once(WEB_ROOT.'/lib/Message.php');
 
-define('MESSAGE_DELIMETER',"\x7f");
-define('MESSAGE_TERMINATOR',"\0");
+define('MESSAGE_DELIMETER',"\n");
+define('MESSAGE_TERMINATOR',"\n");
 define('MESSAGE_MAX_SIZE',16384);
 
 class ChatFile {
@@ -48,14 +48,19 @@ class ChatFile {
 
   // Gets the message structure associated with a string.
   function getMessage($h) {
-
     // Get the fields from the current record
-    $message_author  = stream_get_line($h, MESSAGE_MAX_SIZE, MESSAGE_DELIMETER);
-    $message_date    = stream_get_line($h, MESSAGE_MAX_SIZE, MESSAGE_DELIMETER);
-    $message_message = stream_get_line($h, MESSAGE_MAX_SIZE, MESSAGE_TERMINATOR);
+    $message_author  = fgets($h, MESSAGE_MAX_SIZE);
+    $message_author  = substr($message_author, 0, strlen($message_author)-1);
+    $message_date    = fgets($h, MESSAGE_MAX_SIZE);
+    $message_date    = substr($message_date, 0, strlen($message_date)-1);
+    $message_message = fgets($h, MESSAGE_MAX_SIZE);
+    $message_message  = substr($message_message, 0, strlen($message_message)-1);
 
     // Build the message object from the fields
-    $message = new Message($message_author,$message_message,$message_date);
+    $message = null;
+    if ($message_message || $message_date || $message_author) {
+      $message = new Message($message_author,$message_message,$message_date);
+    }
 
     return($message);
   }

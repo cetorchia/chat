@@ -17,13 +17,6 @@
   define("N",10);
 
   //
-  // Set up some error handling
-  //
-
-  $logger = new Logger();
-  $logger->setErrorHandler();
-
-  //
   // Load the chat file.
   // Get the messages from the chat file
   //
